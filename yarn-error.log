@@ -1,0 +1,56 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe C:\Users\juanr\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add sqlite2
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\juanr\AppData\Local\Microsoft\WindowsApps;C:\Users\juanr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\juanr\AppData\Roaming\npm;C:\Paths
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.5
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/sqlite2: Not found
+      at Request.params.callback [as _callback] (C:\Users\juanr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66992:18)
+      at Request.self.callback (C:\Users\juanr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140763:22)
+      at Request.emit (events.js:400:28)
+      at Request.<anonymous> (C:\Users\juanr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141735:10)
+      at Request.emit (events.js:400:28)
+      at IncomingMessage.<anonymous> (C:\Users\juanr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141657:12)
+      at Object.onceWrapper (events.js:519:28)
+      at IncomingMessage.emit (events.js:412:35)
+      at endReadableNT (internal/streams/readable.js:1317:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "price-scrapping",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "up": "node main.js",
+      "migrate": "npx prisma migrate dev --name"
+    },
+    "dependencies": {
+      "@prisma/client": "^3.8.0",
+      "axios": "^0.24.0",
+      "cheerio": "^1.0.0-rc.10",
+      "express": "^4.17.2",
+      "prisma-cli": "^1.0.9",
+      "prisma-client": "^0.0.0"
+    },
+    "devDependencies": {
+      "prisma": "^3.8.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,22 @@
+{
+  "name": "price-scrapping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.8.0",
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "prisma-cli": "^1.0.9",
+    "prisma-client": "^0.0.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "prisma": "^3.8.0"
+  }
+}

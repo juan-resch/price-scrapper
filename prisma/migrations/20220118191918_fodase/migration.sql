@@ -1,0 +1,14 @@
+-- CreateTable
+CREATE TABLE "Product" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "link" TEXT NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "Pricing" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "idProduct" INTEGER NOT NULL,
+    "updateAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT "Pricing_idProduct_fkey" FOREIGN KEY ("idProduct") REFERENCES "Product" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);
